@@ -1,0 +1,6 @@
+1b
+
+
+using another widget connect it with a pointer refer to code snippet
+final function nama;
+classname(this.nama)

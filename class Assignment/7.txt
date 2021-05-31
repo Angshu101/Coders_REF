@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h> 
+int main() {
+   int row , col,count=0,sum=0,prod=1,prod1=1;
+   printf("ENTER THE ROWS AND COLOUMN ");
+   scanf("%d %d",&row,&col);
+   int *arr = (int *)malloc(row * col * sizeof(int)); 
+   int i, j;
+   for (i = 0; i < row; i++)
+   {
+
+     for (j = 0; j < col; j++)
+        {
+        scanf("%d",(arr + i*col + j));
+        }
+   } 
+   printf("The matrix elements are:\n");
+   for (i = 0; i < row; i++) {
+      for (j = 0; j < col; j++) {
+         printf("%d ", *(arr + i*col + j)); 
+      }
+      printf("\n");
+   }
+   for (i = 0; i < row; i++) 
+   {
+  for (j = 0; j < col; j++) {
+    if(*(arr + i*col + j)!=0)
+   {
+  count++;
+   }
+      }
+   }
+   printf("The number of non zero elements are %d",count);
+   for(i = 0; i < row; i++)
+   {
+   	sum=sum+*(arr + i*col + i);
+   }
+   printf("\n The sum is %d",sum);
+   for (i = 0; i < row; i++) 
+   {
+  
+      prod=prod*(*(arr + i*col + i));
+      prod1=prod1*(*(arr + i*col + (row-i-1)));
+   }
+   printf("\nThe product of main daigonal %d",prod);
+   printf("\nThe product of main daigonal %d",prod1);
+   free(arr); 
+   return 0;
+}

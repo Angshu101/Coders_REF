@@ -1,0 +1,118 @@
+
+body{
+    background-image: linear-gradient(#FC5E55,#FA4083);
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 1.25rem;
+    font-weight: 100;
+
+}
+.container{
+    width:800px;
+    /* background-color: rgb(18, 60, 12); */
+    min-height:600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:30% ;
+}
+header{
+    /* background-color: rgb(41, 96, 36); */
+    /* min-height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px;
+    padding-bottom: 20px;
+
+text-align:center;}
+
+main{
+    /* background-color: rgb(43, 139, 41); */
+    min-height: 300px;
+    display:flex;
+    align-items: center;
+}
+.cards1, .cards2,.cards3{
+padding:30px,30px,20px,30px;
+box-sizing:border-box;
+}
+.cards{
+    /* background-color: rgb(28, 161, 15); */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.cards1{
+    /* background-color: rgb(224, 21, 99); */
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width:30%;
+    text-align: center;
+}
+.cards2{
+    /* background-color: rgb(165, 34, 99); */
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    /* background-position: bottom;
+    background-position: right; */
+    min-height: 250px;
+    min-height: 250px;
+    width:30%;
+}
+.cards3{
+    /* background-color: rgb(131, 20, 57); */
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width:30%;
+}
+.herbox1{
+    /* background-color: cornflowerblue; */
+    flex:2;
+    padding-right:100px
+
+}
+.herbox2{
+    /* background-color:mediumspringgreen; */
+    flex:1;
+}
+h1{
+    font-size: 3.25rem;
+    margin-bottom:1.2rem ;
+}
+h2{
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+
+}
+p{
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Sansita Swashed';
+    
+}
+.cards p{
+    font-size:0.85rem;
+    line-height: 1.2rem;
+    /* margin:10px 30px 0px 30px ;   */
+    /* top right bottom left  */
+    margin-top: 10px;
+
+}
+.cards i{
+    font-size: 100px;
+    padding-top: 30px;
+}
+.cards a{
+    color: white;
+    text-decoration: none;
+}
+.herbox1 a{
+    padding: 10px,10px,10px,10px;
+    background-color: white;
+    text-decoration: none;
+    margin-bottom: 300px;
+}
